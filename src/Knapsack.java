@@ -40,28 +40,21 @@ class Knapsack {
         	}
 	}
 
-
 	/**
-	*	Parametros: val[] - Valores de cada item.
-	*				wItem[] - Pesos de cada item
-	*				wKnapsack - Peso maximo da mochila
-	*
-	*	Return: Valor maximo possivel
+	* Dado um conjunto de itens, seus repectivos pesos e, a capacidade máxima da mochila.
+	* Obtem-se o valor máximo que pode alcançado preenchendo-se a mochila. Nesse caso, os 
+	* itens são objetos indivisiveis.
+	* @param val[] - Valores de cada item.
+	* @param wItem[] - Pesos de cada item
+	* @param wKnapsack - Peso maximo da mochila
+	* @return Valor maximo possivel
 	*/
 	private static int knapsack(int val[], int wItem[], int wKnapsack){
 
 		int n = wItem.length; //Recupera a quantidade de itens.
 		//Cria matriz que representa a tabela de pesos (pesos itens x peso da mochila)
 		int [][] m = new int[n + 1][wKnapsack + 1]; 
-
-		//Instancia primeira coluna com zeros (peso da mochila zero nao cabe nenhum item)
-		for (int i = 0; i <= n; i++)
-			m [i][0] = 0;	
-
-		//Instancia primeira linha com zeros
-		for (int i = 0; i <= wKnapsack; i++)
-			m [0][i] = 0;
-
+		//Por default, todos os elementos da primeira linha e da primeira coluna, são zero.
 		for (int item = 1; item <= n; item++) {
 			//preenchendo os valores na tabela
 			for (int knapsackWeight = 1; knapsackWeight <= wKnapsack; knapsackWeight++ ) {
