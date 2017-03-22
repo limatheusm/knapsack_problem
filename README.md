@@ -1,5 +1,5 @@
-# Problema da Mochila Inteira
-## Programação Dinâmica
+# Programação Dinâmica
+## Problema da Mochila Inteira
 
 ## Instruções
 
@@ -20,8 +20,7 @@ n: |O|
 M : capacidade da mochila
 pi : vetor de pesos dos objetos
 vi : vetor de valores dos objetos
-
-Arquivo exemplo
+##### Arquivo exemplo
 4 30
 13 23 17 19
 23 29 27 25
