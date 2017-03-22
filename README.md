@@ -10,26 +10,19 @@
 ```
 ## Arquivo de entrada
 Seguem o padrão do arquivo "mochila01.txt", ou seja, 
-
-n M
-
-pi
-
-vi
-
+<br>
+n M <br>
+pi <br>
+vi <br>
+<br>
 onde:
-
-n: |O|
-
-M : capacidade da mochila
-
-pi : vetor de pesos dos objetos
-
-vi : vetor de valores dos objetos
-
+<br>
+n: |O|<br>
+M : capacidade da mochila<br>
+pi : vetor de pesos dos objetos<br>
+vi : vetor de valores dos objetos<br>
+<br>
 ##### Arquivo exemplo
-4 30
-
-13 23 17 19
-
-23 29 27 25
+4 30<br>
+13 23 17 19<br>
+23 29 27 25<br>
